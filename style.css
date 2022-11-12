@@ -1,13 +1,130 @@
-.img {
-    width: 25vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body { 
+  margin: 0;
+  font-family:'Segoe UI', sans-serif;
 }
+
+.dark-mode {
+  background-color: rgb(44, 44, 44);
+  color: white;
+}
+
+.toggle {
+  position: absolute;
+  top: 3vw;
+  right: 3vw;
+  overflow-x: hidden;
+}
+
+.switch {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    padding: 8vw;
+}
+.profile a {
+  padding-right: 1vw;
+  color: rgb(158, 138, 212);
+}
+
+.profile-hello {
+    flex: 60%;
+    font-size: 3vw;
+    padding-right: 2vw;
+}
+
+.profile-about {
+    font-size: 2.2vw;
+}
+
+.profile-img {
+    flex: 40%;
+}
+
+.img {
+  width: 25vw;
+}
+
+.work {
+  display: flex;
+}
+
+.work-container {
+  flex: 50%;
+  text-align: center;
+}
+.work-container img {
+  width: 70%;
+  border-radius: 12px;
+}
+
+.footer {
+  padding: 8vw;
+  color: gray;
+  font-size: 1.5vw;
+}
+
 @media (max-width: 1025px) {
     .img {width: 35vw;}
+    .profile-hello {font-size: 4vw;}
+    .profile-about {font-size: 3vw;}
+    .footer {font-size: 2vw;}
 }
-@media (max-width: 600px) {
-    .img {width: 60vw;}
+@media (max-width: 500px) {
+    .img {display: none;}
 }

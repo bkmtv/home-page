@@ -1,10 +1,48 @@
 ﻿<!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <title>Yuri Bekmetov</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 <body>
-    <img src="img/yuri.png" class="img" alt="Yuri Bekmetov">
+    <div class="toggle">
+    <label class="switch">
+        <input type="checkbox" onclick="toggle()">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+    <div class="profile">
+
+        <div class="profile-hello">
+            <p>Hello 👋, I'm Yuri.</p>
+            <div class="profile-about">
+                <p>I am a Junior QA engineer, focusing on Web and Mobile applications.</p>
+                <a href="https://github.com/bkmtv" target=”_blank”>GitHub</a>
+                <a href="/cv.pdf" target=”_blank”>CV.pdf</a>
+            </div>
+        </div>
+
+        <div class="profile-img">
+            <img src="img/yuri.png" class="img" alt="Yuri Bekmetov">
+        </div>
+    </div>
+<!-- Work -->
+    <div class="work" id="work">
+        <div class="work-container">
+            <a href="#"><img src="/img/mindmaps.png" alt="Mindmaps"></a>
+        </div>
+        <div class="work-container">
+            <a href="/even.html" target="_blank"><img src="/img/math.png" alt="Math program for KUJI"></a>
+        </div>
+    </div>
+
+<!-- Footer -->
+    <div class="footer">
+        © Yuri Bekmetov 2022
+    </div>
+
 </body>
 </html>
