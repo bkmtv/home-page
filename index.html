@@ -8,14 +8,52 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <div class="profile">
-        <p>Yuri Bekmetov</p>
-        </div>
+    
+<button class="tablink" onclick="openPage('home', this, 'rosybrown')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('news', this, 'darksalmon')">News</button>
+<button class="tablink" onclick="openPage('contact', this, 'tan')">Contact</button>
+<button class="tablink" onclick="openPage('about', this, 'dimgrey')">About</button>
 
-    <div class="work">
-        <p><a href="#">QA Mindmaps</a></p>
-        <p><a href="/even.html" target="_blank">Math program for KUJI</a></p>
-    </div>
+<div id="home" class="tabcontent">
+  <img src="/img/yuri.png" alt="Yuri Bekmetov">
+</div>
+
+<div id="news" class="tabcontent">
+  <h3>News</h3>
+  <p>A small math program for KUJI podcast.</p>
+  <p><a href="/math-karginov.html">Check it out.</a></p>
+  <img src="/img/math.png" alt="Screenshot from YouTube" width="60%">
+</div>
+
+<div id="contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="about" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+</div>
+
+<script>
+    function openPage(pageName,elmnt,color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+
+    document.getElementById("defaultOpen").click();
+    </script>
 
 </body>
 </html>
