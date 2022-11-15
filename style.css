@@ -6,58 +6,130 @@ body, html {
   font-family: Inter,Helvetica Neue,Helvetica,sans-serif;
 }
 
+/* TABS */
 .tablink {
-  background-color: #555;
+  background-color: #4F484F;
   color: white;
   float: left;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 17px;
+  font-size: 18px;
   width: 25%;
 }
-
 .tablink:hover {
   background-color: #777;
   transition: 0.4s;
 }
-
 .tabcontent {
-  color: white;
   display: none;
   padding: 100px 50px;
   height: 100%;
+  text-align: center;
+  font-size: 18px;
 }
-
+/* HOME */
 #home {
-  background-color:rosybrown;
+  background-color: #AA9A9D;
+  color: #FFF;
 }
+#home a {
+  color: #FFF;
+}
+.home-logo img {
+  width: 20%;
+  animation-duration: 1s;
+  animation-name: slidelogo;
+  position: relative;
+  padding-top: 30px;
+}
+@keyframes slidelogo {
+  0% {
+    top: 150px;
+    opacity: 0;
+  }
 
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+.home-hello {
+  animation-duration: 1s;
+  animation-name: slidehello;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+  font-size: 16px;
+}
+@keyframes slidehello {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* NEWS */
 #news {
-  background-color:darksalmon;
+  background-color:#FFF;
 }
-
-#contact {
-  background-color:tan;
+#news a {
+  color: #4F484F;
 }
-
+.news-img-kuji {
+  width: 300px;
+  border-radius: 26px;
+  border-color: #FFF;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.btn {
+  padding: 12px 26px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 2px solid #4F484F;
+  background-color: #FFF;
+}
+.btn:hover {
+  background-color: #4F484F;
+  color: #FFF;
+  transition: 0.4s;
+}
+/* LINKS */
+#links {
+  background-color:#FFF;
+}
+#links a {
+  color: #4F484F;
+  border: 2px solid #666;
+  width: 150px;
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+}
+#links a:hover {
+  background-color: #666;
+  color: #FFF;
+  transition: 0.4s;
+}
+/* ABOUT */
 #about {
-  background-color:dimgrey;
+  background-color:#AA9A9D;
+  color: #FFF;
 }
-
-#home img {
-  width: 25vw;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+#about img {
+  width: 200px;
+  padding-top: 60px;
 }
-
-@media (max-width: 1025px) {
-  #home img {width: 35vw;}
+/* MEDIA */
+@media (max-width: 960px) {
+  #home img {width: 30%;}
+  .tablink {font-size: 21px;}
 }
-
 @media (max-width: 600px) {
-  #home img {width: 45vw;}
+  #home img {width: 40%;}
+  .tablink {font-size: 23px;}
 }

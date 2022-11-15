@@ -8,33 +8,47 @@
     <script src="main.js"></script>
 </head>
 <body>
-    
-<button class="tablink" onclick="openPage('home', this, 'rosybrown')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('news', this, 'darksalmon')">News</button>
-<button class="tablink" onclick="openPage('contact', this, 'tan')">Contact</button>
-<button class="tablink" onclick="openPage('about', this, 'dimgrey')">About</button>
 
+<button class="tablink" onclick="openPage('home', this, '#AA9A9D')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('news', this, '#AA9A9D')">News</button>
+<button class="tablink" onclick="openPage('links', this, '#AA9A9D')">Links</button>
+<button class="tablink" onclick="openPage('about', this, '#AA9A9D')">About</button>
+
+<!-- Home tab -->
 <div id="home" class="tabcontent">
-  <img src="/img/yuri.png" alt="Yuri Bekmetov">
+  <div class="home-hello">
+    <h2>Hello, I'm Yuri.</h2>
+    <p>I'm interested in front-end and QA.<br>
+       Open to new <a href="/files/CV QA Yuri Bekmetov.pdf">opportunities</a>  and <a href="mailto:bekm.yu@yandex.ru">collaboration</a>.<br>
+       </p>
+  </div>
+
+  <div class="home-logo">
+    <img src="/img/logo.png" alt="Yuri Bekmetov">
+  </div>
 </div>
 
+<!-- News tab -->
 <div id="news" class="tabcontent">
-  <h3>News</h3>
-  <p>A small math program for KUJI podcast.</p>
-  <p><a href="/math-karginov.html">Check it out.</a></p>
-  <img src="/img/math.png" alt="Screenshot from YouTube" width="60%">
+  <p>A small math program for Timur Karginov from KUJI podcast.</p>
+  <form action="/math-karginov.html">
+    <button type="submit" class="btn">Check this out</button>
+ </form>
+  <img class="news-img-kuji" src="/img/kuji.png" alt="KUJI">
 </div>
 
-<div id="contact" class="tabcontent">
-  <h3>Contact</h3>
-  <p>Get in touch, or swing by for a cup of coffee.</p>
+<!-- Links tab -->
+<div id="links" class="tabcontent">
+  <a href="https://teletype.in/@bekmetov">Teletype</a>
+  <a href="https://github.com/bkmtv">GitHub</a>
+  <a href="#">Instagram</a>
+  </ul>
 </div>
 
+<!-- About tab -->
 <div id="about" class="tabcontent">
-  <h3>About</h3>
-  <p>Who we are and what we do.</p>
-</div>
-
+  <p>Coming soon.</p>
+  <img src="/img/yuri.png" alt="Yuri Bekmetov">
 </div>
 
 <script>
