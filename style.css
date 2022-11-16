@@ -16,7 +16,7 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 18px;
+  font-size: 1.7vw;
   width: 25%;
 }
 .tablink:hover {
@@ -33,6 +33,7 @@ body, html {
 /* HOME */
 #home {
   background-color: #AA9A9D;
+  padding-top: 120px;
 }
 #home a {
   color: #FFF;
@@ -43,7 +44,7 @@ body, html {
   transition: 0.4s;
 }
 .home-logo img {
-  width: 15vw;
+  width: 20vw;
   animation-duration: 1s;
   animation-name: slidelogo;
   animation-fill-mode: backwards;
@@ -92,6 +93,7 @@ body, html {
   width: 300px;
   border-radius: 26px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 50px;
 }
 
 /* LINKS */
@@ -122,15 +124,17 @@ body, html {
   padding-top: 60px;
 }
 /* MEDIA */
-@media (max-width: 960px) {
-  .tablink {font-size: 2.8vw;}
+@media only screen and (max-width: 1024px) {
+  .tablink {font-size: 2.4vw;}
   .home-hello {font-size: 2vw;}
-  #home img {width: 20vw;}
+  .home-logo img {width: 25vw;}
+  #home img {width: 22vw;}
   #about img {width: 30vw;}
 }
-@media (max-width: 600px) {
-  .tablink {font-size: 3.8vw;}
+@media only screen and (max-width: 768px) {
+  .tablink {font-size: 3.3vw;}
   .home-hello {font-size: 3vw;}
+  .home-logo img {width: 30vw;}
   #home img {width: 30vw;}
   #about img {width: 40vw;}
 }
