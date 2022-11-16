@@ -6,10 +6,10 @@
     <meta name="author" content="Yuri Bekmetov">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
 </head>
 <body>
 
+<!-- Tab menu -->
 <button class="tablink" onclick="openPage('home', this, '#AA9A9D')" id="defaultOpen">Home</button>
 <button class="tablink" onclick="openPage('news', this, '#AA9A9D')">News</button>
 <button class="tablink" onclick="openPage('links', this, '#AA9A9D')">Links</button>
@@ -20,8 +20,9 @@
   <div class="home-hello">
     <h2>Hello, I'm Yuri.</h2>
     <p>I'm interested in front-end and QA.<br>
-       Open to new <a href="/files/CV.pdf">opportunities</a>  and <a href="mailto:bekm.yu@yandex.ru">collaboration</a>.<br>
-       </p>
+       Open to new <a href="/files/CV.pdf">opportunities</a>  
+       and <a href="mailto:bekm.yu@yandex.ru">collaboration</a>.
+    </p>
   </div>
 
   <div class="home-logo">
@@ -32,22 +33,20 @@
 <!-- News tab -->
 <div id="news" class="tabcontent">
   <p>A small math program for Timur Karginov from KUJI podcast.</p>
-  <form action="/math-karginov.html">
-    <button type="submit" class="btn">Check this out</button>
- </form>
+  <p><a href="https://bekmetov.ru/math-karginov.html" target="_blank">Check this out</a></p>
   <img class="news-img-kuji" src="/img/kuji.png" alt="KUJI">
 </div>
 
 <!-- Links tab -->
 <div id="links" class="tabcontent">
-  <a href="https://teletype.in/@bekmetov">Teletype</a>
-  <a href="https://github.com/bkmtv">GitHub</a>
+  <a href="https://teletype.in/@bekmetov" target="_blank">Teletype</a>
+  <a href="https://github.com/bkmtv" target="_blank">GitHub</a>
+  <a href="https://www.youtube.com/@Bekmetov" target="_blank">YouTube</a>
   <a href="#">Instagram</a>
 </div>
 
 <!-- About tab -->
 <div id="about" class="tabcontent">
-  <p>Coming soon.</p>
   <img src="/img/yuri.png" alt="Yuri Bekmetov">
 </div>
 
