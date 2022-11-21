@@ -29,7 +29,7 @@ body, html {
   height: 100%;
   text-align: center;
   font-size: 18px;
-  padding: 100px 50px;
+  padding: 25px 50px;
 }
 /* HOME */
 #home {
@@ -68,6 +68,7 @@ body, html {
   animation-delay: 1s;
   animation-fill-mode: backwards;
   font-size: 1.6vw;
+  padding-top: 30px;
 }
 @keyframes slidehello {
   0% {
