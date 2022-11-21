@@ -5,6 +5,7 @@ body, html {
   margin: 0;
   font-family: Inter,Helvetica Neue,Helvetica,sans-serif;
   color: #FFF;
+  background-color: #AA9A9D;
 }
 
 /* TABS */
@@ -32,7 +33,6 @@ body, html {
 }
 /* HOME */
 #home {
-  background-color: #AA9A9D;
   padding-top: 100px;
 }
 #home a {
@@ -44,7 +44,6 @@ body, html {
   transition: 0.4s;
 }
 .home-logo img {
-  width: 20vw;
   animation-duration: 1s;
   animation-name: slidelogo;
   animation-fill-mode: backwards;
@@ -79,15 +78,13 @@ body, html {
   }
 }
 /* NEWS */
-#news {
-  background-color: #FFF;
-  color: #4F484F;
-}
 #news a {
-  color: #4F484F;
+  color: #fff;
 }
 #news a:hover {
+  color:#4F484F;
   text-decoration: none;
+  transition: 0.4s;
 }
 .news-img-kuji {
   width: 300px;
@@ -108,6 +105,7 @@ body, html {
   padding: 16px;
   margin: 20px;
   text-decoration: none;
+  border-radius: 30px;
 }
 #links a:hover {
   background-color: #666;
