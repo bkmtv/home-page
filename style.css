@@ -44,6 +44,7 @@ body, html {
   transition: 0.4s;
 }
 .home-logo img {
+  width: 20vw;
   animation-duration: 1s;
   animation-name: slidelogo;
   animation-fill-mode: backwards;
