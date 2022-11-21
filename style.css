@@ -17,7 +17,7 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 1.7vw;
+  font-size: 1.65vw;
   width: 25%;
 }
 .tablink:hover {
@@ -67,7 +67,7 @@ body, html {
   animation-name: slidehello;
   animation-delay: 1s;
   animation-fill-mode: backwards;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
 }
 @keyframes slidehello {
   0% {
@@ -125,14 +125,14 @@ body, html {
 /* MEDIA */
 @media screen and (max-width: 1024px) {
   .tablink {font-size: 2.4vw;}
-  .home-hello {font-size: 2vw;}
+  .home-hello {font-size: 2.1vw;}
   .home-logo img {width: 25vw;}
   #home img {width: 22vw;}
   #about img {width: 30vw;}
 }
 @media screen and (max-width: 768px) {
   .tablink {font-size: 3.3vw;}
-  .home-hello {font-size: 3vw;}
+  .home-hello {font-size: 3.1vw;}
   .home-logo img {width: 30vw;}
   #home img {width: 30vw;}
   #home {padding: 30px 20px;}
