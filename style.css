@@ -3,7 +3,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: Inter,Helvetica Neue,Helvetica,sans-serif;
+  font-family: sans-serif;
   color: #FFF;
   background-color: #AA9A9D;
 }
@@ -17,7 +17,7 @@ body, html {
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
-  font-size: 1.65vw;
+  font-size: 1.4vw;
   width: 25%;
 }
 .tablink:hover {
@@ -44,7 +44,7 @@ body, html {
   transition: 0.4s;
 }
 .home-logo img {
-  width: 20vw;
+  width: 15vw;
   animation-duration: 1s;
   animation-name: slidelogo;
   animation-fill-mode: backwards;
@@ -67,8 +67,10 @@ body, html {
   animation-name: slidehello;
   animation-delay: 1s;
   animation-fill-mode: backwards;
-  font-size: 1.6vw;
-  padding-top: 30px;
+  font-size: 1.5vw;
+}
+.home-hello h2 {
+  opacity: 0.75;
 }
 @keyframes slidehello {
   0% {
@@ -96,9 +98,6 @@ body, html {
 }
 
 /* LINKS */
-#links {
-  background-color:#AA9A9D;
-}
 #links a {
   background-color: rgb(234, 234, 234);
   color: #4F484F;
@@ -115,35 +114,29 @@ body, html {
   transition: 0.4s;
 }
 /* ABOUT */
-#about {
-  background-color:#AA9A9D;
-  color: #FFF;
-}
 #about img {
   width: 20vw;
   padding-top: 60px;
 }
 /* MEDIA */
 @media screen and (max-width: 1024px) {
-  .tablink {font-size: 2.4vw;}
-  .home-hello {font-size: 2.1vw;}
+  .tablink {font-size: 1.8vw;}
+  .home-hello {font-size: 2vw;}
   .home-logo img {width: 25vw;}
-  #home img {width: 22vw;}
   #about img {width: 30vw;}
 }
 @media screen and (max-width: 768px) {
-  .tablink {font-size: 3.3vw;}
-  .home-hello {font-size: 3.1vw;}
+  .tablink {font-size: 2.8vw;}
+  .home-hello {font-size: 2.6vw;}
   .home-logo img {width: 30vw;}
-  #home img {width: 30vw;}
-  #home {padding: 30px 20px;}
+  #home {padding: 150px 20px;}
   #about img {width: 40vw;}
+  .tabcontent {padding: 130px 20px;}
   .tablink {
     margin: 0;
-    float: none;
-    display: block;
-    width: 100%;
-    text-align: center;
+    float: left;
+    width: 50%;
     border-top: 1px solid #AA9A9D;
+    border-left: 1px solid #AA9A9D;
   }
 }
