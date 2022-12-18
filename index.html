@@ -12,27 +12,38 @@
 <body>
 
 <!-- Tab menu -->
-<button class="tablink" onclick="openPage('home', this, '#AA9A9D')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('news', this, '#AA9A9D')">News</button>
-<button class="tablink" onclick="openPage('links', this, '#AA9A9D')">Links</button>
-<button class="tablink" onclick="openPage('about', this, '#AA9A9D')">About</button>
+<button class="tablink" onclick="openPage('home', this, '#4F484F')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openPage('news', this, '#4F484F')">Projects</button>
+<button class="tablink" onclick="openPage('links', this, '#4F484F')">Contact</button>
+<button class="tablink" onclick="openPage('about', this, '#4F484F')">About</button>
 
 <!-- Home tab -->
 <div id="home" class="tabcontent">
   <div class="home-hello">
-   <h2>Hello, I'm Yuri.</h2>
+  <h1>Hello!</h1>
+   <h3>I'm Yuri.</h3>
   </div>
 
   <div class="home-logo">
-    <img src="/img/logo.webp" alt="Yuri Bekmetov">
+    <img src="img/logo.webp" alt="Yuri Bekmetov">
   </div>
 </div>
 
 <!-- News tab -->
 <div id="news" class="tabcontent">
-  <p>A small math program for Timur Karginov from KUJI podcast.</p>
-  <p><a href="https://bekmetov.ru/math-karginov.html" target="_blank">Check this out</a></p>
-  <img class="news-img-kuji" src="/img/kuji.webp" alt="KUJI">
+  <div class="news-row">
+    <div class="news-column">
+      <p>Math program for KUJI</p>
+      <p>Calculator</p>
+      </ul>
+    </div>
+    <div class="news-column"><img class="news-img-kuji" src="img/kuji.webp" alt="KUJI"></div>
+    <div class="news-column">
+      <p>A small math program for Timur Karginov from KUJI podcast.</p>
+      <p><a href="https://bekmetov.ru/math-karginov.html" target="_blank">Try it.</a></p>
+    </div>
+    <div class="news-column">4</div>
+  </div>
 </div>
 
 <!-- Links tab -->

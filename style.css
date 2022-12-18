@@ -5,12 +5,12 @@ body, html {
   margin: 0;
   font-family: sans-serif;
   color: #FFF;
-  background-color: #AA9A9D;
+  background-color: #4F484F;
 }
 
 /* TABS */
 .tablink {
-  background-color: #4F484F;
+  background-color: #AA9A9D;
   color: white;
   float: left;
   border: none;
@@ -27,13 +27,13 @@ body, html {
 .tabcontent {
   display: none;
   height: 100%;
-  text-align: center;
-  font-size: 18px;
-  padding: 80px 50px;
+  font-size: 14px;
+  padding-top: 100px;
 }
 /* HOME */
 #home {
   padding-top: 100px;
+  text-align: center;
 }
 #home a {
   color: #FFF;
@@ -86,16 +86,28 @@ body, html {
   color: #fff;
 }
 #news a:hover {
-  color:#4F484F;
   text-decoration: none;
-  transition: 0.4s;
 }
 .news-img-kuji {
-  width: 300px;
-  border-radius: 26px;
+  width: 100%;
+  border-radius: 16px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  margin-bottom: 50px;
 }
+.news-row {
+  padding-top: 30px;
+}
+.news-column {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+}
+
+/* Clear floats after the columns
+.news-row:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
 
 /* LINKS */
 #links a {
@@ -129,14 +141,9 @@ body, html {
   .tablink {font-size: 2.8vw;}
   .home-hello {font-size: 2.6vw;}
   .home-logo img {width: 30vw;}
-  #home {padding: 150px 20px;}
+  #home {padding-top: 250px;}
   #about img {width: 40vw;}
   .tabcontent {padding: 130px 20px;}
-  .tablink {
-    margin: 0;
-    float: left;
-    width: 50%;
-    border-top: 1px solid #AA9A9D;
-    border-left: 1px solid #AA9A9D;
-  }
+  .tablink {margin: 0; width: 100%;}
+  .news-column {width: 100%; padding: 30px;}
 }
