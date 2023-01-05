@@ -69,3 +69,12 @@ body {
 .links a:active {
   color: #635260;
 }
+
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 2rem;
+  }
+  .profile {
+    font-size: 1.2rem;
+  }
+}
