@@ -10,68 +10,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Tab menu -->
-<button class="tablink" onclick="openPage('home', this, 'saddlebrown')" id="defaultOpen">Home</button>
-<button class="tablink" onclick="openPage('news', this, 'saddlebrown')">Projects</button>
-<button class="tablink" onclick="openPage('links', this, 'saddlebrown')">Contact</button>
-<button class="tablink" onclick="openPage('about', this, 'saddlebrown')">About</button>
-
-<!-- Home tab -->
-<div id="home" class="tabcontent">
-  <div class="home__hello">
-    <h1>Hello!</h1>
-      <h3>I'm Yuri.</h3>
-  </div>
-
-  <div class="home__logo">
-    <img src="img/logo.webp" alt="Yuri Bekmetov">
-  </div>
-</div>
-
-<!-- News tab -->
-<div id="news" class="tabcontent">
-  <div class="news__row">
-    <div class="news__column">
-      <p>Math program for KUJI</p>
-      </ul>
+  <div class="container">
+    <div class="wrap">
+      <div class="logo">
+        <img src="img/bkmt.webp" alt="Yuri Bekmetov"><br />
+        <h1>Yuri Bekmetov</h1>
+      </div>
+      <div class="card profile">
+        <p>Hello, I'm <b>Yuri</b>. I'm a front-end developer and an amateur musician.
+            You can contact me on <a href="https://t.me/ibkmt">Telegram</a>.</p>
+      </div>
+      <div class="links">
+        <a href="https://github.com/bkmtv" target="_blank">
+          <img src="img/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.youtube.com/@Bekmetov" target="_blank">
+          <img src="img/youtube.png" alt="YouTube">
+        </a>
+      </div>
     </div>
-    <div class="news__column"><img src="img/kuji.webp" alt="KUJI"></div>
-    <div class="news__column">
-      <p>A small math program for Timur Karginov from KUJI podcast.</p>
-      <p><a href="https://bekmetov.ru/math-karginov.html" target="_blank">Try program (new window).</a></p>
-    </div>
-    <div class="news__column">2019</div>
   </div>
-</div>
-
-<!-- Links tab -->
-<div id="links" class="tabcontent">
-  <p><a href="https://github.com/bkmtv" target="_blank">GitHub</a></p>
-  <p><a href="https://www.youtube.com/@Bekmetov" target="_blank">YouTube</a></p>
-</div>
-
-<!-- About tab -->
-<div id="about" class="tabcontent">
-  <img src="/img/yuri.webp" alt="Yuri Bekmetov">
-</div>
-
-<script>
-    function openPage(page, elem, color) {
-      let tabcontent = document.getElementsByClassName("tabcontent");
-        for (let i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
-        }
-      let tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].style.color = "";
-        }
-      document.getElementById(page).style.display = "block";
-      elem.style.color = color;
-    }
-
-    document.getElementById("defaultOpen").click();
-    </script>
-
 </body>
 </html>
