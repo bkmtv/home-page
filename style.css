@@ -18,14 +18,8 @@ body {
 }
 
 .wrap {
-  max-width: 600px;
+  max-width: 650px;
   margin-top: 3rem;
-}
-
-.card {
-  padding: .1rem 1.2rem;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
 }
 
 .logo {
@@ -37,7 +31,13 @@ body {
   width: 150px;
 }
 
+.logo h1 {
+  font-weight: 700;
+  font-size: 2.75rem;
+}
+
 .profile {
+  margin-top: 2rem;
   font-size: 1.4rem;
   line-height: 1.5;
 }
@@ -55,26 +55,17 @@ body {
 
 .links {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .links a {
+  color: #957f91;
   text-decoration: none;
+  margin: 1rem;
 }
 
-.links img {
-  margin: 0.8rem;
-  width: 32px;
-  opacity: 0.7;
-  transition: 0.2s;
-}
-
-.links img:hover,
-.links img:focus,
-.links img:active {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  
+.links a:hover,
+.links a:focus,
+.links a:active {
+  color: #635260;
 }
